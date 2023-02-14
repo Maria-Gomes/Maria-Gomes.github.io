@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Maria Gomes</title>
+  </head>
+  <body>
+    <div class="container-fluid main-container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-3">
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <a class="navbar-brand pr-2" href="#">Maria Gomes</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item pr-4">
+                  <a class="nav-link" data-splide="0" href="#"
+                    ><img
+                      class="pl-1 pr-3 shadowfilter"
+                      src="./images/home.png"
+                    />Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item pr-4">
+                  <a class="nav-link" data-splide="1" href="#"
+                    ><img
+                      class="pl-1 pr-3 shadowfilter"
+                      src="./images/layer.png"
+                    />Projects</a
+                  >
+                </li>
+                <li class="nav-item pr-4">
+                  <a class="nav-link skills-nav" data-splide="2" href="#"
+                    ><img
+                      class="pl-1 pr-3 shadowfilter"
+                      src="./images/nav-skill.png"
+                    />Skills</a
+                  >
+                </li>
+                <li class="nav-item pr-4">
+                  <a class="nav-link" data-splide="3" href="#"
+                    ><img
+                      class="pl-1 pr-3 shadowfilter"
+                      src="./images/contact.png"
+                    />Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="splide-item home-splide">
+                    <div class="row justify-content-center mt-5 ml-3 pr-3">
+                      <div class="col-lg-6 col-md-8 col-sm-5 text-left">
+                        <h1 class="pb-2" style="font-size: xxx-large">
+                          Hi, I'm Maria
+                        </h1>
+                        <p style="font-size: x-large">
+                          A computer science graduate and aspiring developer
+                          that likes to read books and play guitar on the side.
+                          You can click the button below to check out my work.
+                        </p>
+                      </div>
+                      <div
+                        class="col-lg-4 col-md-6 col-sm-6 pl-5 ml-5 align-self-center"
+                      >
+                        <img
+                          class="img-fluid home-cat"
+                          src="./images/cat-crop.gif"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="row float-left justify-content-center pb-5 ml-3 pt-1"
+                    >
+                      <div
+                        class="col-lg-3 col-md-3 col-sm-2 pt-3 pr-5 ml-3"
+                        id="home-btn-1"
+                      >
+                        <button
+                          id="project-btn"
+                          class="btn btn-lg btn-outline-light"
+                          data-splide="1"
+                        >
+                          Projects
+                        </button>
+                      </div>
+                      <div
+                        class="col-lg-3 col-md-3 col-sm-2 pt-3 pl-5 pr-5 mr-5"
+                        id="home-btn-1"
+                      >
+                        <button class="btn btn-lg btn-outline-light">
+                          Resume
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-item project-splide">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-12 col-md-7 pt-5 align-self-center">
+                        <div id="accordion">
+                          <div class="card">
+                            <div
+                              class="card-header text-center"
+                              id="headingOne"
+                            >
+                              <h5 class="mb-0">
+                                <button
+                                  class="btn btn-link manta"
+                                  data-toggle="collapse"
+                                  data-target="#collapseOne"
+                                  aria-expanded="true"
+                                  aria-controls="collapseOne"
+                                >
+                                  Manta
+                                </button>
+                              </h5>
+                            </div>
+
+                            <div
+                              id="collapseOne"
+                              class="collapse show"
+                              aria-labelledby="headingOne"
+                              data-parent="#accordion"
+                            >
+                              <div class="row card-body">
+                                <div class="col-lg-10 col-md-5">
+                                  <p>
+                                    Manta is a web app that aids in time and
+                                    task management.
+                                  </p>
+                                  <p>
+                                    This project follows MVT Architecture with
+                                    Python 3, Django and SQLite for the backend.
+                                    The front end consists of basic HTML and
+                                    CSS, as well as Bootstrap 4.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div
+                                  class="manta-splide col-lg-10 col-md-5"
+                                  aria-label="Manta"
+                                >
+                                  <div class="splide__track">
+                                    <ul class="splide__list">
+                                      <li class="splide__slide">
+                                        <img
+                                          class="img-fluid project-img"
+                                          src="./images/tman_details.png"
+                                        />
+                                      </li>
+                                      <li>
+                                        <img
+                                          class="img-fluid project-img"
+                                          src="./images/calendar.png"
+                                        />
+                                      </li>
+                                      <li>
+                                        <img
+                                          class="img-fluid project-img"
+                                          src="./images/diary.png"
+                                        />
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-10 col-md-5">
+                                  <p>
+                                    Users can create projects, assign tasks with
+                                    deadlines, keep track of events and write
+                                    diary entries about their day.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header text-center" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button
+                                class="btn btn-link papyrus collapsed"
+                                data-toggle="collapse"
+                                data-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                              >
+                                Papyrus
+                              </button>
+                            </h5>
+                          </div>
+                          <div
+                            id="collapseTwo"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod
+                              high life accusamus terry richardson ad squid. 3
+                              wolf moon officia aute, non cupidatat skateboard
+                              dolor brunch. Food truck quinoa nesciunt laborum
+                              eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                              put a bird on it squid single-origin coffee nulla
+                              assumenda shoreditch et. Nihil anim keffiyeh
+                              helvetica, craft beer labore wes anderson cred
+                              nesciunt sapiente ea proident. Ad vegan excepteur
+                              butcher vice lomo. Leggings occaecat craft beer
+                              farm-to-table, raw denim aesthetic synth nesciunt
+                              you probably haven't heard of them accusamus
+                              labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-item">
+                    <div>
+                      <div class="skills-splide">
+                        <div
+                          class="row justify-content-center text-left mt-5 pt-5 mb-5 ml-2 mr-2"
+                        >
+                          <div
+                            class="skill01 col-lg-1 align-self-center col-md-3 col-sm-2"
+                          >
+                            <img
+                              class="img-fluid skill-icon shadowfilter"
+                              style="height: 80px; width: 80px"
+                              src="./images/full-stack.png"
+                            />
+                          </div>
+                          <div
+                            class="skill01 col-lg-4 col-md-7 col-sm-5 pt-3 pb-3"
+                          >
+                            <h3>Fullstack Web Development</h3>
+                            <p>
+                              Familiar with the MERN stack, Django's MVT
+                              architecture and MySQL, as well as Bootstrap and
+                              CSS.
+                            </p>
+                          </div>
+                          <div
+                            class="skill02 col-lg-1 col-md-3 align-self-center"
+                          >
+                            <img
+                              class="img-fluid skill-icon shadowfilter"
+                              src="./images/api.png"
+                            />
+                          </div>
+                          <div class="skill02 col-lg-5 col-md-7 col-sm-5 pt-3">
+                            <h3>Application Programming Interfacing</h3>
+                            <p>
+                              Implementing APIs such as the Twitter and
+                              OpenLibrary API in projects for better
+                              functionality.
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="row justify-content-center text-left ml-2 mr-2"
+                        >
+                          <div
+                            class="skill03 col-lg-1 col-md-3 align-self-center"
+                          >
+                            <img
+                              class="img-fluid skill-icon shadowfilter"
+                              src="./images/machine-learning.png"
+                            />
+                          </div>
+                          <div class="skill03 col-lg-5 col-md-7 col-sm-5">
+                            <h3>Machine Learning</h3>
+                            <p>
+                              Knowledge on data processing, neural nets,
+                              regression, natural language processing, ensemble
+                              learning and more.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide-item">
+                    <div>
+                      <div class="contact-splide">
+                        <div class="row mb-4 mt-3">
+                          <div
+                            class="col-lg-10 col-md-10 col-sm-10 text-left"
+                            style="margin-left: 10%"
+                          >
+                            <p class="contact01">Let's get acquainted!</p>
+                            <p class="contact02">You can reach me via:</p>
+                          </div>
+                        </div>
+                        <div class="row justify-content-left mb-5 ml-2">
+                          <div
+                            class="col-lg-1 col-md-3 col-sm-1"
+                            style="margin-left: 10%"
+                          >
+                            <img
+                              class="contact-icon align-self-center img-fluid"
+                              src="./images/email.png"
+                            />
+                          </div>
+                          <div
+                            class="col-lg-2 col-md-7 col-sm-3 align-self-center text-left"
+                          >
+                            <p class="contact-item">Gmail</p>
+                          </div>
+                        </div>
+                        <div class="row justify-content-left mb-5 ml-2">
+                          <div
+                            class="col-lg-1 col-md-3 col-sm-7"
+                            style="margin-left: 10%"
+                          >
+                            <img
+                              class="contact-icon align-self-center img-fluid"
+                              src="./images/github.png"
+                            />
+                          </div>
+                          <div
+                            class="col-lg-2 col-md-7 col-sm-7 align-self-center text-left"
+                          >
+                            <p class="contact-item">Github</p>
+                          </div>
+                        </div>
+                        <div class="row justify-content-left ml-2">
+                          <div
+                            class="col-lg-1 col-md-3 col-sm-7"
+                            style="margin-left: 10%"
+                          >
+                            <img
+                              class="contact-icon align-self-center img-fluid"
+                              src="./images/linkedin.png"
+                            />
+                          </div>
+                          <div
+                            class="col-lg-2 col-md-7 col-sm-7 align-self-center text-left"
+                          >
+                            <p class="contact-item">LinkedIn</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- <a href="https://www.flaticon.com/free-icons/khao-manee-cat" title="khao manee cat icons">Khao manee cat icons created by Pixel perfect - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by rukanicon - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/full-stack" title="full stack icons">Full stack icons created by orvipixel - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/api" title="api icons">Api icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/machine-learning" title="machine learning icons">Machine learning icons created by Design Circle - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a> -->
+  </body>
+</html>
