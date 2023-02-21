@@ -19,9 +19,11 @@
   <body>
     <div class="container-fluid main-container">
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-3">
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <nav class="navbar navbar-dark navbar-expand-lg">
-            <a class="navbar-brand pr-2" href="#">Maria Gomes</a>
+            <a class="navbar-brand pr-2" style="color: #f9cd82" href="#"
+              >Maria Gomes</a
+            >
             <button
               class="navbar-toggler"
               type="button"
@@ -80,18 +82,61 @@
                 <li class="splide__slide">
                   <div class="splide-item home-splide">
                     <div class="row justify-content-center mt-5 ml-3 pr-3">
-                      <div class="col-lg-6 col-md-8 col-sm-5 text-left">
-                        <h1 class="pb-2" style="font-size: xxx-large">
+                      <div class="col-lg-1 col-md-2 col-sm-3 text-left mt-3">
+                        <ul id="contact-list">
+                          <li style="text-decoration: none">
+                            <a
+                              class="shadowfilter"
+                              href="mailto:mariarohinigomes@gmail.com"
+                              target="_blank"
+                            >
+                              <img
+                                class="home-contact ml-4 mb-3"
+                                src="./images/email.png"
+                                id="home-email"
+                            /></a>
+                          </li>
+                          <li>
+                            <a
+                              class="shadowfilter"
+                              href="https://github.com/Maria-Gomes"
+                              target="_blank"
+                            >
+                              <img
+                                class="home-contact ml-4 mb-3"
+                                src="./images/github.png"
+                            /></a>
+                          </li>
+                          <li>
+                            <a
+                              class="shadowfilter"
+                              href="https://www.linkedin.com/in/maria-gomes-04aa90212/"
+                              target="_blank"
+                            >
+                              <img
+                                class="home-contact ml-4"
+                                src="./images/linkedin.png"
+                            /></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 col-md-8 col-sm-10 text-left">
+                        <h1
+                          class="pb-2"
+                          id="home-heading"
+                          style="font-size: xxx-large; color: #f9cd82"
+                        >
                           Hi, I'm Maria
                         </h1>
-                        <p style="font-size: x-large">
+                        <p id="home-text" style="font-size: x-large">
                           A computer science graduate and aspiring developer
                           that likes to read books and play guitar on the side.
                           You can click the button below to check out my work.
                         </p>
                       </div>
                       <div
-                        class="col-lg-4 col-md-6 col-sm-6 pl-5 ml-5 align-self-center"
+                        id="cat-div"
+                        class="col-lg-4 col-md-6 col-sm-8 pl-5 ml-5 align-self-center"
                       >
                         <img
                           class="img-fluid home-cat"
@@ -100,27 +145,34 @@
                       </div>
                     </div>
                     <div
-                      class="row float-left justify-content-center pb-5 ml-3 pt-1"
+                      class="row float-left justify-content-center pb-5 pt-1"
+                      id="home-buttons-row"
                     >
                       <div
-                        class="col-lg-3 col-md-3 col-sm-2 pt-3 pr-5 ml-3"
+                        class="shadowfilter col-lg-3 col-md-4 col-sm-4 pt-3 pr-5 ml-3"
                         id="home-btn-1"
                       >
                         <button
                           id="project-btn"
-                          class="btn btn-lg btn-outline-light"
+                          class="btn btn-lg"
                           data-splide="1"
                         >
                           Projects
                         </button>
                       </div>
                       <div
-                        class="col-lg-3 col-md-3 col-sm-2 pt-3 pl-5 pr-5 mr-5"
-                        id="home-btn-1"
+                        class="shadowfilter col-lg-3 col-md-3 col-sm-2 pt-3 pl-5 pr-5 mr-5"
+                        id="home-btn-2"
                       >
-                        <button class="btn btn-lg btn-outline-light">
-                          Resume
-                        </button>
+                        <a
+                          href="./Resume+Maria+Gomes.pdf"
+                          download="MariaGomes"
+                          target="_blank"
+                        >
+                          <button id="resume-btn" class="btn btn-lg">
+                            Resume
+                          </button></a
+                        >
                       </div>
                     </div>
                   </div>
@@ -128,23 +180,37 @@
                 <li class="splide__slide">
                   <div class="splide-item project-splide">
                     <div class="row justify-content-center">
-                      <div class="col-lg-12 col-md-7 pt-5 align-self-center">
+                      <div
+                        class="col-lg-10 col-md-10 col-sm-10 mt-5 pb-4 align-self-center text-center"
+                      >
+                        <h1
+                          id="projectSplideHeading"
+                          style="font-size: xxx-large"
+                        >
+                          Projects
+                        </h1>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center" id="projects">
+                      <div
+                        class="col-lg-10 col-md-10 col-sm-10 pt-1 pb-3 align-self-center"
+                      >
                         <div id="accordion">
                           <div class="card">
                             <div
-                              class="card-header text-center"
+                              class="card-header text-center btn btn-link manta shadowfilter"
                               id="headingOne"
+                              data-toggle="collapse"
+                              data-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
                             >
-                              <h5 class="mb-0">
-                                <button
-                                  class="btn btn-link manta"
-                                  data-toggle="collapse"
-                                  data-target="#collapseOne"
-                                  aria-expanded="true"
-                                  aria-controls="collapseOne"
-                                >
-                                  Manta
-                                </button>
+                              <h5 style="font-size: xx-large" class="mb-0">
+                                <img
+                                  class="project-icon img-fluid align-self-center mr-1"
+                                  src="./images/hourglass.png"
+                                />
+                                Manta
                               </h5>
                             </div>
 
@@ -155,7 +221,7 @@
                               data-parent="#accordion"
                             >
                               <div class="row card-body">
-                                <div class="col-lg-10 col-md-5">
+                                <div class="col-lg-12 col-md-12 col-sm-5">
                                   <p>
                                     Manta is a web app that aids in time and
                                     task management.
@@ -168,37 +234,89 @@
                                   </p>
                                 </div>
                               </div>
-                              <div class="row">
+                              <div class="row card-body justify-content-center">
                                 <div
-                                  class="manta-splide col-lg-10 col-md-5"
-                                  aria-label="Manta"
+                                  id="carouselExampleIndicators"
+                                  class="carousel slide col-lg-7 col-md-10 col-sm-10"
+                                  data-ride="carousel"
                                 >
-                                  <div class="splide__track">
-                                    <ul class="splide__list">
-                                      <li class="splide__slide">
-                                        <img
-                                          class="img-fluid project-img"
-                                          src="./images/tman_details.png"
-                                        />
-                                      </li>
-                                      <li>
-                                        <img
-                                          class="img-fluid project-img"
-                                          src="./images/calendar.png"
-                                        />
-                                      </li>
-                                      <li>
-                                        <img
-                                          class="img-fluid project-img"
-                                          src="./images/diary.png"
-                                        />
-                                      </li>
-                                    </ul>
+                                  <ol class="carousel-indicators">
+                                    <li
+                                      data-target="#carouselExampleIndicators"
+                                      data-slide-to="0"
+                                      class="active"
+                                    ></li>
+                                    <li
+                                      data-target="#carouselExampleIndicators"
+                                      data-slide-to="1"
+                                    ></li>
+                                    <li
+                                      data-target="#carouselExampleIndicators"
+                                      data-slide-to="2"
+                                    ></li>
+                                    <li
+                                      data-target="#carouselExampleIndicators"
+                                      data-slide-to="3"
+                                    ></li>
+                                  </ol>
+                                  <div class="carousel-inner align-self-center">
+                                    <div class="carousel-item active">
+                                      <img
+                                        class="d-block img-fluid project-img"
+                                        src="./images/manta-projects.png"
+                                        alt="First slide"
+                                      />
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img
+                                        class="img-fluid project-img"
+                                        src="./images/manta-details.png"
+                                        alt="Second slide"
+                                      />
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img
+                                        class="img-fluid project-img"
+                                        src="./images/diary.png"
+                                        alt="Third slide"
+                                      />
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img
+                                        class="img-fluid project-img"
+                                        src="./images/calendar.png"
+                                        alt="Fourth slide"
+                                      />
+                                    </div>
                                   </div>
+                                  <a
+                                    class="carousel-control-prev"
+                                    href="#carouselExampleIndicators"
+                                    role="button"
+                                    data-slide="prev"
+                                  >
+                                    <span
+                                      class="carousel-control-prev-icon"
+                                      aria-hidden="true"
+                                    ></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a
+                                    class="carousel-control-next"
+                                    href="#carouselExampleIndicators"
+                                    role="button"
+                                    data-slide="next"
+                                  >
+                                    <span
+                                      class="carousel-control-next-icon"
+                                      aria-hidden="true"
+                                    ></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
                                 </div>
                               </div>
-                              <div class="row">
-                                <div class="col-lg-10 col-md-5">
+                              <div class="row card-body">
+                                <div class="col-lg-12 col-md-12 col-sm-5">
                                   <p>
                                     Users can create projects, assign tasks with
                                     deadlines, keep track of events and write
@@ -210,17 +328,20 @@
                           </div>
                         </div>
                         <div class="card">
-                          <div class="card-header text-center" id="headingTwo">
-                            <h5 class="mb-0">
-                              <button
-                                class="btn btn-link papyrus collapsed"
-                                data-toggle="collapse"
-                                data-target="#collapseTwo"
-                                aria-expanded="false"
-                                aria-controls="collapseTwo"
-                              >
-                                Papyrus
-                              </button>
+                          <div
+                            class="card-header text-center btn btn-link papyrus shadowfilter collapsed"
+                            id="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            <h5 class="mb-0" style="font-size: xx-large">
+                              <img
+                                class="project-icon-2 img-fluid align-self-center mr-1"
+                                src="./images/reading-book2.png"
+                              />
+                              Papyrus
                             </h5>
                           </div>
                           <div
@@ -229,20 +350,104 @@
                             aria-labelledby="headingTwo"
                             data-parent="#accordion"
                           >
-                            <div class="card-body">
-                              Anim pariatur cliche reprehenderit, enim eiusmod
-                              high life accusamus terry richardson ad squid. 3
-                              wolf moon officia aute, non cupidatat skateboard
-                              dolor brunch. Food truck quinoa nesciunt laborum
-                              eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-                              put a bird on it squid single-origin coffee nulla
-                              assumenda shoreditch et. Nihil anim keffiyeh
-                              helvetica, craft beer labore wes anderson cred
-                              nesciunt sapiente ea proident. Ad vegan excepteur
-                              butcher vice lomo. Leggings occaecat craft beer
-                              farm-to-table, raw denim aesthetic synth nesciunt
-                              you probably haven't heard of them accusamus
-                              labore sustainable VHS.
+                            <div class="row card-body">
+                              <div class="col-lg-12 col-md-12 col-sm-5">
+                                <p>
+                                  Papyrus is a web app that keeps track of books
+                                  and collections.
+                                </p>
+                                <p>
+                                  This project was done using the full MERN
+                                  stack, along with some CSS and Bootstrap.
+                                  Information about various books and covers
+                                  were retrieved using the OpenLibraryAPI.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row card-body justify-content-center">
+                              <div
+                                id="carouselExampleIndicators"
+                                class="carousel slide col-lg-7 col-md-10 col-sm-10"
+                                data-ride="carousel"
+                              >
+                                <ol class="carousel-indicators">
+                                  <li
+                                    data-target="#carouselExampleIndicators"
+                                    data-slide-to="0"
+                                    class="active"
+                                  ></li>
+                                  <li
+                                    data-target="#carouselExampleIndicators"
+                                    data-slide-to="1"
+                                  ></li>
+                                  <li
+                                    data-target="#carouselExampleIndicators"
+                                    data-slide-to="2"
+                                  ></li>
+                                </ol>
+                                <div class="carousel-inner align-self-center">
+                                  <div class="carousel-item active">
+                                    <img
+                                      class="d-block img-fluid project-img"
+                                      src="./images/papyrus-home.png"
+                                      alt="First slide"
+                                    />
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img
+                                      class="img-fluid project-img"
+                                      src="./images/papyrus-book.png"
+                                      alt="Second slide"
+                                    />
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img
+                                      class="img-fluid project-img"
+                                      src="./images/papyrus-search.png"
+                                      alt="Third slide"
+                                    />
+                                  </div>
+                                </div>
+                                <a
+                                  class="carousel-control-prev"
+                                  href="#carouselExampleIndicators"
+                                  role="button"
+                                  data-slide="prev"
+                                >
+                                  <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                  ></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a
+                                  class="carousel-control-next"
+                                  href="#carouselExampleIndicators"
+                                  role="button"
+                                  data-slide="next"
+                                >
+                                  <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                  ></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row card-body">
+                              <div class="col-lg-12 col-md-12 col-sm-5">
+                                <p>
+                                  Users can create their own book collections,
+                                  update reading progress and search for various
+                                  books by title.
+                                </p>
+                                <p>
+                                  This project is in progress. Features that
+                                  will be added soon include following other
+                                  users, writing book reviews and a notification
+                                  system.
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -253,23 +458,32 @@
                 <li class="splide__slide">
                   <div class="splide-item">
                     <div>
-                      <div class="skills-splide">
+                      <div class="skills-splide mt-5 text-center">
+                        <h3
+                          id="skills-heading"
+                          style="font-size: xxx-large; color: #f9cd82"
+                        >
+                          What I Can Do
+                        </h3>
                         <div
-                          class="row justify-content-center text-left mt-5 pt-5 mb-5 ml-2 mr-2"
+                          class="row skills justify-content-center mt-4 mb-3 ml-2 mr-2"
                         >
                           <div
                             class="skill01 col-lg-1 align-self-center col-md-3 col-sm-2"
                           >
-                            <img
-                              class="img-fluid skill-icon shadowfilter"
-                              style="height: 80px; width: 80px"
-                              src="./images/full-stack.png"
-                            />
+                            <a class="skill-icon">
+                              <img
+                                class="img-fluid shadowfilter"
+                                style="height: 80px; width: 80px"
+                                src="./images/full-stack.png"
+                            /></a>
                           </div>
                           <div
-                            class="skill01 col-lg-4 col-md-7 col-sm-5 pt-3 pb-3"
+                            class="skill01 col-lg-4 col-md-10 col-sm-5 pt-3 pb-3"
                           >
-                            <h3>Fullstack Web Development</h3>
+                            <h3 style="color: #f9cd82">
+                              Fullstack Web Development
+                            </h3>
                             <p>
                               Familiar with the MERN stack, Django's MVT
                               architecture and MySQL, as well as Bootstrap and
@@ -277,15 +491,18 @@
                             </p>
                           </div>
                           <div
-                            class="skill02 col-lg-1 col-md-3 align-self-center"
+                            class="skill02 col-lg-1 col-md-3 col-sm-2 align-self-center"
                           >
-                            <img
-                              class="img-fluid skill-icon shadowfilter"
-                              src="./images/api.png"
-                            />
+                            <a class="skill-icon">
+                              <img
+                                class="img-fluid shadowfilter"
+                                src="./images/api.png"
+                            /></a>
                           </div>
-                          <div class="skill02 col-lg-5 col-md-7 col-sm-5 pt-3">
-                            <h3>Application Programming Interfacing</h3>
+                          <div class="skill02 col-lg-5 col-md-10 col-sm-5 pt-3">
+                            <h3 style="color: #f9cd82">
+                              Application Programming Interfacing
+                            </h3>
                             <p>
                               Implementing APIs such as the Twitter and
                               OpenLibrary API in projects for better
@@ -293,19 +510,18 @@
                             </p>
                           </div>
                         </div>
-                        <div
-                          class="row justify-content-center text-left ml-2 mr-2"
-                        >
+                        <div class="row justify-content-center ml-2 mr-2">
                           <div
-                            class="skill03 col-lg-1 col-md-3 align-self-center"
+                            class="skill03 col-lg-1 col-md-3 col-sm-2 align-self-center"
                           >
-                            <img
-                              class="img-fluid skill-icon shadowfilter"
-                              src="./images/machine-learning.png"
-                            />
+                            <a class="skill-icon">
+                              <img
+                                class="img-fluid shadowfilter"
+                                src="./images/machine-learning.png"
+                            /></a>
                           </div>
-                          <div class="skill03 col-lg-5 col-md-7 col-sm-5">
-                            <h3>Machine Learning</h3>
+                          <div class="skill03 col-lg-5 col-md-10 col-sm-5">
+                            <h3 style="color: #f9cd82">Machine Learning</h3>
                             <p>
                               Knowledge on data processing, neural nets,
                               regression, natural language processing, ensemble
@@ -321,61 +537,79 @@
                   <div class="splide-item">
                     <div>
                       <div class="contact-splide">
-                        <div class="row mb-4 mt-3">
-                          <div
-                            class="col-lg-10 col-md-10 col-sm-10 text-left"
-                            style="margin-left: 10%"
-                          >
-                            <p class="contact01">Let's get acquainted!</p>
-                            <p class="contact02">You can reach me via:</p>
+                        <div class="row mb-4 mt-5">
+                          <div class="col-lg-10 col-md-10 col-sm-10">
+                            <p id="contact-heading" style="color: #f9cd82">
+                              Contact Me!
+                            </p>
                           </div>
                         </div>
-                        <div class="row justify-content-left mb-5 ml-2">
-                          <div
-                            class="col-lg-1 col-md-3 col-sm-1"
-                            style="margin-left: 10%"
-                          >
+                        <div
+                          class="row justify-content-left shadowfilter mb-5"
+                          id="contact01"
+                        >
+                          <div class="col-lg-1 col-md-3 col-sm-7">
                             <img
-                              class="contact-icon align-self-center img-fluid"
+                              class="contact-icon align-self-center"
                               src="./images/email.png"
                             />
                           </div>
                           <div
-                            class="col-lg-2 col-md-7 col-sm-3 align-self-center text-left"
+                            class="col-lg-1 col-md-7 col-sm-7 align-self-center"
                           >
-                            <p class="contact-item">Gmail</p>
+                            <p class="contact-item">
+                              <a
+                                class="contact-link"
+                                href="mailto:mariarohinigomes@gmail.com"
+                                >mariarohinigomes@gmail.com</a
+                              >
+                            </p>
                           </div>
                         </div>
-                        <div class="row justify-content-left mb-5 ml-2">
-                          <div
-                            class="col-lg-1 col-md-3 col-sm-7"
-                            style="margin-left: 10%"
-                          >
+                        <div
+                          class="row justify-content-left shadowfilter mb-5"
+                          id="contact02"
+                        >
+                          <div class="col-lg-1 col-md-3 col-sm-7">
                             <img
-                              class="contact-icon align-self-center img-fluid"
+                              class="contact-icon align-self-center"
                               src="./images/github.png"
                             />
                           </div>
                           <div
-                            class="col-lg-2 col-md-7 col-sm-7 align-self-center text-left"
+                            class="col-lg-1 col-md-7 col-sm-7 align-self-center"
                           >
-                            <p class="contact-item">Github</p>
+                            <p class="contact-item">
+                              <a
+                                class="contact-link"
+                                href="https://github.com/Maria-Gomes"
+                                target="_blank"
+                                >Github</a
+                              >
+                            </p>
                           </div>
                         </div>
-                        <div class="row justify-content-left ml-2">
-                          <div
-                            class="col-lg-1 col-md-3 col-sm-7"
-                            style="margin-left: 10%"
-                          >
+                        <div
+                          class="row justify-content-left shadowfilter"
+                          id="contact03"
+                        >
+                          <div class="col-lg-1 col-md-3 col-sm-7">
                             <img
-                              class="contact-icon align-self-center img-fluid"
+                              class="contact-icon align-self-center"
                               src="./images/linkedin.png"
                             />
                           </div>
                           <div
-                            class="col-lg-2 col-md-7 col-sm-7 align-self-center text-left"
+                            class="col-lg-2 col-md-7 col-sm-7 align-self-center"
                           >
-                            <p class="contact-item">LinkedIn</p>
+                            <p class="contact-item">
+                              <a
+                                class="contact-link"
+                                href="https://www.linkedin.com/in/maria-gomes-04aa90212/"
+                                target="_blank"
+                                >LinkedIn</a
+                              >
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -406,13 +640,5 @@
     ></script>
     <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
     <script src="./js/main.js"></script>
-
-    <!-- <a href="https://www.flaticon.com/free-icons/khao-manee-cat" title="khao manee cat icons">Khao manee cat icons created by Pixel perfect - Flaticon</a>
-    <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by rukanicon - Flaticon</a>
-  <a href="https://www.flaticon.com/free-icons/full-stack" title="full stack icons">Full stack icons created by orvipixel - Flaticon</a>
-    <a href="https://www.flaticon.com/free-icons/api" title="api icons">Api icons created by Freepik - Flaticon</a>
-  <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/machine-learning" title="machine learning icons">Machine learning icons created by Design Circle - Flaticon</a>
-  <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a> -->
   </body>
 </html>
