@@ -103,9 +103,12 @@ for (let i = 0; i < navItems.length; i++) {
 
 let projectButton = document.getElementById("project-btn");
 projectButton.addEventListener("click", function () {
+  i = this.getAttribute("data-splide");
   navSplide.go(parseInt(this.getAttribute("data-splide")));
-  heading.classList.toggle("fade01");
-  accordion.classList.toggle("fade02");
+  if (i == 1) {
+    heading.classList.toggle("fade01");
+    accordion.classList.toggle("fade02");
+  }
 });
 
 // let projects = document.getElementsByClassName("project-link");
