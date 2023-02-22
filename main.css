@@ -31,16 +31,19 @@ body {
 }
 
 /* home splide */
-#contact-list {
-  display: inline;
-  list-style-type: none;
+
+#resume-btn {
+  margin-left: 10%;
 }
 
-#home-email {
-  margin-top: 57%;
+#contact-list {
+  list-style-type: none;
+  padding: 0;
+  align-self: center;
 }
 
 .home-contact {
+  display: list-item;
   margin: 0 auto;
   height: 35px;
   width: 35px;
@@ -58,24 +61,8 @@ body {
 }
 
 .home-cat {
-  height: 75%;
-  width: 70%;
-}
-
-#home-buttons-row {
-  margin-left: 4%;
-}
-
-#home-btn-1 {
-  width: 40%;
-}
-
-#home-btn-1 {
-  width: 40%;
-}
-
-#home-btn-2 {
-  width: 40%;
+  height: 250px;
+  width: 300px;
 }
 
 #project-btn {
@@ -115,11 +102,6 @@ body {
 }
 
 /* skills splide */
-@media only screen and (max-width: 600px) {
-  .skills {
-    text-align: center;
-  }
-}
 
 #skills-heading.fade01 {
   animation-name: fadeInDown;
@@ -162,23 +144,50 @@ body {
 }
 
 /* contact splide */
-@media only screen and (max-width: 600px) {
+.contacts {
+  justify-content: left;
+}
+
+.contact {
+  justify-content: left;
+}
+
+@media only screen and (max-width: 800px) {
   .contact-splide {
     text-align: center;
   }
-  #contact-list {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 10%;
+  #cat-div {
+    padding-top: 7%;
+    padding-bottom: 5%;
   }
-  #home-email {
-    margin-top: 0;
+  .home-contact {
+    display: inline-block;
+    margin-left: 3.5%;
   }
-  #contact-list li {
-    margin-right: 10%;
+  .home-cat {
+    height: 100%;
+    width: 70%;
   }
-  #home-buttons {
-    margin-left: 0;
+  .skills {
+    text-align: center;
+  }
+  #contact-heading {
+    text-align: center;
+  }
+  .contacts {
+    justify-content: center;
+  }
+
+  .contact {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+@media only screen and ((max-width: 820px) and (min-width: 780px)) {
+  #home-buttons-row {
+    padding-top: 15%;
   }
   #cat-div {
     padding-top: 5%;
@@ -186,13 +195,9 @@ body {
   }
 }
 
-@media only screen and ((max-width: 820px) and (min-width: 780px)) {
-  #home-buttons-row {
-    margin-left: 15%;
-  }
-  #cat-div {
-    padding-top: 5%;
-    padding-bottom: 5%;
+@media only screen and (min-width: 820px) {
+  .skills {
+    text-align: left;
   }
 }
 

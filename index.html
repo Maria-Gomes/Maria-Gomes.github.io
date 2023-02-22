@@ -82,43 +82,38 @@
                 <li class="splide__slide">
                   <div class="splide-item home-splide">
                     <div class="row justify-content-center mt-5 ml-3 pr-3">
-                      <div class="col-lg-1 col-md-2 col-sm-3 text-left mt-3">
-                        <ul id="contact-list">
-                          <li style="text-decoration: none">
-                            <a
-                              class="shadowfilter"
-                              href="mailto:mariarohinigomes@gmail.com"
-                              target="_blank"
-                            >
-                              <img
-                                class="home-contact ml-4 mb-3"
-                                src="./images/email.png"
-                                id="home-email"
-                            /></a>
-                          </li>
-                          <li>
-                            <a
-                              class="shadowfilter"
-                              href="https://github.com/Maria-Gomes"
-                              target="_blank"
-                            >
-                              <img
-                                class="home-contact ml-4 mb-3"
-                                src="./images/github.png"
-                            /></a>
-                          </li>
-                          <li>
-                            <a
-                              class="shadowfilter"
-                              href="https://www.linkedin.com/in/maria-gomes-04aa90212/"
-                              target="_blank"
-                            >
-                              <img
-                                class="home-contact ml-4"
-                                src="./images/linkedin.png"
-                            /></a>
-                          </li>
-                        </ul>
+                      <div
+                        class="col-lg-1 col-md-2 col-sm-10"
+                        id="contact-list"
+                      >
+                        <a
+                          class="shadowfilter"
+                          href="mailto:mariarohinigomes@gmail.com"
+                          target="_blank"
+                        >
+                          <img
+                            class="home-contact mb-3"
+                            src="./images/email.png"
+                            id="home-email"
+                        /></a>
+                        <a
+                          class="shadowfilter"
+                          href="https://github.com/Maria-Gomes"
+                          target="_blank"
+                        >
+                          <img
+                            class="home-contact mb-3"
+                            src="./images/github.png"
+                        /></a>
+                        <a
+                          class="shadowfilter"
+                          href="https://www.linkedin.com/in/maria-gomes-04aa90212/"
+                          target="_blank"
+                        >
+                          <img
+                            class="home-contact mb-3"
+                            src="./images/linkedin.png"
+                        /></a>
                       </div>
                       <div class="col-lg-6 col-md-8 col-sm-10 text-left">
                         <h1
@@ -133,46 +128,36 @@
                           that likes to read books and play guitar on the side.
                           You can click the button below to check out my work.
                         </p>
+                        <div
+                          class="btn-toolbar pb-3 pt-3"
+                          id="home-buttons-row"
+                        >
+                          <button
+                            id="project-btn"
+                            class="btn btn-lg shadowfilter"
+                            data-splide="1"
+                          >
+                            Projects
+                          </button>
+                          <a
+                            href="./Resume+Maria+Gomes.pdf"
+                            download="MariaGomes"
+                            target="_blank"
+                          >
+                            <button
+                              id="resume-btn"
+                              class="btn btn-lg shadowfilter"
+                            >
+                              Resume
+                            </button></a
+                          >
+                        </div>
                       </div>
-                      <div
-                        id="cat-div"
-                        class="col-lg-4 col-md-6 col-sm-8 pl-5 ml-5 align-self-center"
-                      >
+                      <div id="temp" class="col-lg-4 col-md-6 col-sm-8">
                         <img
                           class="img-fluid home-cat"
                           src="./images/cat-crop.gif"
                         />
-                      </div>
-                    </div>
-                    <div
-                      class="row float-left justify-content-center pb-5 pt-1"
-                      id="home-buttons-row"
-                    >
-                      <div
-                        class="shadowfilter col-lg-3 col-md-4 col-sm-4 pt-3 pr-5 ml-3"
-                        id="home-btn-1"
-                      >
-                        <button
-                          id="project-btn"
-                          class="btn btn-lg"
-                          data-splide="1"
-                        >
-                          Projects
-                        </button>
-                      </div>
-                      <div
-                        class="shadowfilter col-lg-3 col-md-3 col-sm-2 pt-3 pl-5 pr-5 mr-5"
-                        id="home-btn-2"
-                      >
-                        <a
-                          href="./Resume+Maria+Gomes.pdf"
-                          download="MariaGomes"
-                          target="_blank"
-                        >
-                          <button id="resume-btn" class="btn btn-lg">
-                            Resume
-                          </button></a
-                        >
                       </div>
                     </div>
                   </div>
@@ -458,7 +443,7 @@
                 <li class="splide__slide">
                   <div class="splide-item">
                     <div>
-                      <div class="skills-splide mt-5 text-center">
+                      <div class="skills-splide mt-5 mb-5 text-center">
                         <h3
                           id="skills-heading"
                           style="font-size: xxx-large; color: #f9cd82"
@@ -466,7 +451,7 @@
                           What I Can Do
                         </h3>
                         <div
-                          class="row skills justify-content-center mt-4 mb-3 ml-2 mr-2"
+                          class="row skills justify-content-center mt-5 mb-3 ml-2 mr-2"
                         >
                           <div
                             class="skill01 col-lg-1 align-self-center col-md-3 col-sm-2"
@@ -479,7 +464,7 @@
                             /></a>
                           </div>
                           <div
-                            class="skill01 col-lg-4 col-md-10 col-sm-5 pt-3 pb-3"
+                            class="skill01 col-lg-4 col-md-10 col-sm-10 pt-3 pb-3"
                           >
                             <h3 style="color: #f9cd82">
                               Fullstack Web Development
@@ -499,7 +484,9 @@
                                 src="./images/api.png"
                             /></a>
                           </div>
-                          <div class="skill02 col-lg-5 col-md-10 col-sm-5 pt-3">
+                          <div
+                            class="skill02 col-lg-5 col-md-10 col-sm-10 pt-3"
+                          >
                             <h3 style="color: #f9cd82">
                               Application Programming Interfacing
                             </h3>
@@ -510,7 +497,9 @@
                             </p>
                           </div>
                         </div>
-                        <div class="row justify-content-center ml-2 mr-2">
+                        <div
+                          class="row skills justify-content-center ml-2 mr-2 mt-5"
+                        >
                           <div
                             class="skill03 col-lg-1 col-md-3 col-sm-2 align-self-center"
                           >
@@ -520,7 +509,7 @@
                                 src="./images/machine-learning.png"
                             /></a>
                           </div>
-                          <div class="skill03 col-lg-5 col-md-10 col-sm-5">
+                          <div class="skill03 col-lg-5 col-md-10 col-sm-10">
                             <h3 style="color: #f9cd82">Machine Learning</h3>
                             <p>
                               Knowledge on data processing, neural nets,
@@ -535,82 +524,90 @@
                 </li>
                 <li class="splide__slide">
                   <div class="splide-item">
-                    <div>
-                      <div class="contact-splide">
-                        <div class="row mb-4 mt-5">
-                          <div class="col-lg-10 col-md-10 col-sm-10">
-                            <p id="contact-heading" style="color: #f9cd82">
-                              Contact Me!
-                            </p>
+                    <div class="contact-splide">
+                      <div class="row mb-4 mt-5">
+                        <div class="col-lg-10 col-md-10 col-sm-12">
+                          <p id="contact-heading" style="color: #f9cd82">
+                            Contact Me!
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row contacts">
+                        <div class="col-lg-7 col-md-6 col-sm-12">
+                          <div
+                            class="row contact shadowfilter mb-5"
+                            id="contact01"
+                          >
+                            <div class="col-lg-2 col-md-3 col-sm-7">
+                              <img
+                                class="contact-icon align-self-center"
+                                src="./images/email.png"
+                              />
+                            </div>
+                            <div
+                              class="col-lg-1 col-md-7 col-sm-8 align-self-center ml-1 mr-1"
+                            >
+                              <p class="contact-item">
+                                <a
+                                  class="contact-link"
+                                  href="mailto:mariarohinigomes@gmail.com"
+                                  >mariarohinigomes@gmail.com</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="row contact shadowfilter mb-5"
+                            id="contact02"
+                          >
+                            <div class="col-lg-2 col-md-3 col-sm-7">
+                              <img
+                                class="contact-icon align-self-center"
+                                src="./images/github.png"
+                              />
+                            </div>
+                            <div
+                              class="col-lg-1 col-md-7 col-sm-7 align-self-center"
+                            >
+                              <p class="contact-item">
+                                <a
+                                  class="contact-link"
+                                  href="https://github.com/Maria-Gomes"
+                                  target="_blank"
+                                  >Github</a
+                                >
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row contact shadowfilter" id="contact03">
+                            <div class="col-lg-2 col-md-3 col-sm-7">
+                              <img
+                                class="contact-icon align-self-center"
+                                src="./images/linkedin.png"
+                              />
+                            </div>
+                            <div
+                              class="col-lg-1 col-md-7 col-sm-7 align-self-center"
+                            >
+                              <p class="contact-item">
+                                <a
+                                  class="contact-link"
+                                  href="https://www.linkedin.com/in/maria-gomes-04aa90212/"
+                                  target="_blank"
+                                  >LinkedIn</a
+                                >
+                              </p>
+                            </div>
                           </div>
                         </div>
                         <div
-                          class="row justify-content-left shadowfilter mb-5"
-                          id="contact01"
+                          class="col-lg-4 col-md-6 col-sm-8 mt-5"
+                          id="cat-div"
                         >
-                          <div class="col-lg-1 col-md-3 col-sm-7">
-                            <img
-                              class="contact-icon align-self-center"
-                              src="./images/email.png"
-                            />
-                          </div>
-                          <div
-                            class="col-lg-1 col-md-7 col-sm-7 align-self-center"
-                          >
-                            <p class="contact-item">
-                              <a
-                                class="contact-link"
-                                href="mailto:mariarohinigomes@gmail.com"
-                                >mariarohinigomes@gmail.com</a
-                              >
-                            </p>
-                          </div>
-                        </div>
-                        <div
-                          class="row justify-content-left shadowfilter mb-5"
-                          id="contact02"
-                        >
-                          <div class="col-lg-1 col-md-3 col-sm-7">
-                            <img
-                              class="contact-icon align-self-center"
-                              src="./images/github.png"
-                            />
-                          </div>
-                          <div
-                            class="col-lg-1 col-md-7 col-sm-7 align-self-center"
-                          >
-                            <p class="contact-item">
-                              <a
-                                class="contact-link"
-                                href="https://github.com/Maria-Gomes"
-                                target="_blank"
-                                >Github</a
-                              >
-                            </p>
-                          </div>
-                        </div>
-                        <div
-                          class="row justify-content-left shadowfilter"
-                          id="contact03"
-                        >
-                          <div class="col-lg-1 col-md-3 col-sm-7">
-                            <img
-                              class="contact-icon align-self-center"
-                              src="./images/linkedin.png"
-                            />
-                          </div>
-                          <div
-                            class="col-lg-2 col-md-7 col-sm-7 align-self-center"
-                          >
-                            <p class="contact-item">
-                              <a
-                                class="contact-link"
-                                href="https://www.linkedin.com/in/maria-gomes-04aa90212/"
-                                target="_blank"
-                                >LinkedIn</a
-                              >
-                            </p>
-                          </div>
+                          <img
+                            class="img-fluid align-self-center home-cat"
+                            src="./images/cat-crop.gif"
+                          />
                         </div>
                       </div>
                     </div>
