@@ -12,6 +12,7 @@ let skill03 = document.getElementsByClassName("skill03");
 let heading = document.getElementById("projectSplideHeading");
 let accordion = document.getElementById("projects");
 let homeHeading = document.getElementById("home-heading");
+let profile = document.getElementById("profile");
 let homeText = document.getElementById("home-text");
 let homeButtons = document.getElementById("home-buttons-row");
 let homeIcons = document.getElementById("contact-list");
@@ -21,6 +22,7 @@ let contact02 = document.getElementById("contact02");
 let contact03 = document.getElementById("contact03");
 
 homeHeading.classList.toggle("fade01");
+profile.classList.toggle("fade01");
 homeIcons.classList.toggle("fade01");
 homeText.classList.toggle("fade02");
 homeButtons.classList.toggle("fade03");
@@ -30,11 +32,13 @@ for (let i = 0; i < navItems.length; i++) {
     navSplide.go(parseInt(this.getAttribute("data-splide")));
     if (i == 0) {
       homeHeading.classList.toggle("fade01");
+      profile.classList.toggle("fade01");
       homeIcons.classList.toggle("fade01");
       homeText.classList.toggle("fade02");
       homeButtons.classList.toggle("fade03");
     } else {
       if (homeHeading.classList.contains("fade01")) {
+        profile.classList.remove("fade01");
         homeHeading.classList.remove("fade01");
         homeIcons.classList.remove("fade01");
       }
