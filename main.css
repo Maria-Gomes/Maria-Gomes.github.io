@@ -305,6 +305,14 @@ body {
     brightness(99%) contrast(97%);
 }
 
+.project-icon-3 {
+  margin: 0 auto;
+  height: 45px;
+  width: 45px;
+  filter: invert(75%) sepia(78%) saturate(257%) hue-rotate(344deg)
+    brightness(99%) contrast(97%);
+}
+
 .card {
   background: rgba(23, 11, 25, 0.5);
   border-color: var(--gold);
