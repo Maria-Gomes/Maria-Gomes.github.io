@@ -1,682 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css" />
-    <link rel="stylesheet" href="./main.css" />
-    <title>Maria Gomes</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-  </head>
-  <body>
-    <div class="container-fluid main-container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <nav class="navbar navbar-dark navbar-expand-lg">
-            <a class="navbar-brand pr-2" style="color: #f9cd82" href="#"
-              >Maria Gomes</a
-            >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item pr-4">
-                  <a class="nav-link" data-splide="0" href="#"
-                    ><img
-                      class="pl-1 pr-3 shadowfilter"
-                      src="./images/home.png"
-                    />Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item pr-4">
-                  <a class="nav-link" data-splide="1" href="#"
-                    ><img
-                      class="pl-1 pr-3 shadowfilter"
-                      src="./images/layer.png"
-                    />Projects</a
-                  >
-                </li>
-                <li class="nav-item pr-4">
-                  <a class="nav-link skills-nav" data-splide="2" href="#"
-                    ><img
-                      class="pl-1 pr-3 shadowfilter"
-                      src="./images/nav-skill.png"
-                    />Skills</a
-                  >
-                </li>
-                <li class="nav-item pr-4">
-                  <a class="nav-link" data-splide="3" href="#"
-                    ><img
-                      class="pl-1 pr-3 shadowfilter"
-                      src="./images/contact.png"
-                    />Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Your Name</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="splide-item home-splide">
-                    <div class="row justify-content-center mt-5 ml-3 pr-3">
-                      <div
-                        class="col-lg-1 col-md-2 col-sm-10"
-                        id="contact-list"
-                      >
-                        <a
-                          class="shadowfilter"
-                          href="mailto:mariarohinigomes@gmail.com"
-                          target="_blank"
-                        >
-                          <img
-                            class="home-contact mb-3"
-                            src="./images/email.png"
-                            id="home-email"
-                        /></a>
-                        <a
-                          class="shadowfilter"
-                          href="https://github.com/Maria-Gomes"
-                          target="_blank"
-                        >
-                          <img
-                            class="home-contact mb-3"
-                            src="./images/github.png"
-                        /></a>
-                        <a
-                          class="shadowfilter"
-                          href="https://www.linkedin.com/in/maria-gomes-04aa90212/"
-                          target="_blank"
-                        >
-                          <img
-                            class="home-contact mb-3"
-                            src="./images/linkedin.png"
-                        /></a>
-                      </div>
-                      <div class="col-lg-6 col-md-8 col-sm-10 text-left">
-                        <h1
-                          class="pb-2"
-                          id="home-heading"
-                          style="font-size: xxx-large; color: #f9cd82"
-                        >
-                          Hi, I'm Maria
-                        </h1>
-                        <p id="home-text" style="font-size: x-large">
-                          A computer science graduate and aspiring developer
-                          that likes to read books and play guitar on the side.
-                          You can click the button below to check out my work.
-                        </p>
-                        <div
-                          class="btn-toolbar pb-3 pt-3"
-                          id="home-buttons-row"
-                        >
-                          <button
-                            id="project-btn"
-                            class="btn btn-lg shadowfilter"
-                            data-splide="1"
-                          >
-                            Projects
-                          </button>
-                          <a
-                            href="./Maria Gomes.pdf"
-                            download="MariaGomes"
-                            target="_blank"
-                          >
-                            <button
-                              id="resume-btn"
-                              class="btn btn-lg shadowfilter"
-                            >
-                              Resume
-                            </button></a
-                          >
-                        </div>
-                      </div>
-                      <div id="profile" class="col-lg-3 col-md-6 col-sm-8">
-                        <img
-                          class="img-fluid align-self-center"
-                          src="./images/IMG_20220828_135136_170-1.jpg"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="splide-item project-splide">
-                    <div class="row justify-content-center">
-                      <div
-                        class="col-lg-10 col-md-10 col-sm-10 mt-5 pb-4 align-self-center text-center"
-                      >
-                        <h1
-                          id="projectSplideHeading"
-                          style="font-size: xxx-large"
-                        >
-                          Projects
-                        </h1>
-                      </div>
-                    </div>
-                    <div class="row justify-content-center" id="projects">
-                      <div
-                        class="col-lg-10 col-md-10 col-sm-10 pt-1 pb-3 align-self-center"
-                      >
-                        <div id="accordion">
-                          <div class="card">
-                            <div
-                              class="card-header text-center btn btn-link manta shadowfilter"
-                              id="headingOne"
-                              data-toggle="collapse"
-                              data-target="#collapseOne"
-                              aria-expanded="true"
-                              aria-controls="collapseOne"
-                            >
-                              <h5 style="font-size: xx-large" class="mb-0">
-                                <img
-                                  class="project-icon img-fluid align-self-center mr-1"
-                                  src="./images/hourglass.png"
-                                />
-                                Manta
-                              </h5>
-                            </div>
+    </nav>
 
-                            <div
-                              id="collapseOne"
-                              class="collapse"
-                              aria-labelledby="headingOne"
-                              data-parent="#accordion"
-                            >
-                              <div class="row card-body">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                  <p>
-                                    Manta is a web app that aids in time and
-                                    task management.
-                                  </p>
-                                  <p>
-                                    This project follows MVT Architecture with
-                                    Python 3, Django and SQLite for the backend.
-                                    The front end consists of basic HTML and
-                                    CSS, as well as Bootstrap 4.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="row card-body justify-content-center">
-                                <div
-                                  id="carouselExampleIndicators"
-                                  class="carousel slide col-lg-7 col-md-10 col-sm-10"
-                                  data-ride="carousel"
-                                >
-                                  <ol class="carousel-indicators">
-                                    <li
-                                      data-target="#carouselExampleIndicators"
-                                      data-slide-to="0"
-                                      class="active"
-                                    ></li>
-                                    <li
-                                      data-target="#carouselExampleIndicators"
-                                      data-slide-to="1"
-                                    ></li>
-                                    <li
-                                      data-target="#carouselExampleIndicators"
-                                      data-slide-to="2"
-                                    ></li>
-                                    <li
-                                      data-target="#carouselExampleIndicators"
-                                      data-slide-to="3"
-                                    ></li>
-                                  </ol>
-                                  <div class="carousel-inner align-self-center">
-                                    <div class="carousel-item active">
-                                      <img
-                                        class="d-block img-fluid project-img"
-                                        src="./images/manta-projects.png"
-                                        alt="First slide"
-                                      />
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img
-                                        class="img-fluid project-img"
-                                        src="./images/manta-details.png"
-                                        alt="Second slide"
-                                      />
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img
-                                        class="img-fluid project-img"
-                                        src="./images/diary.png"
-                                        alt="Third slide"
-                                      />
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img
-                                        class="img-fluid project-img"
-                                        src="./images/calendar.png"
-                                        alt="Fourth slide"
-                                      />
-                                    </div>
-                                  </div>
-                                  <a
-                                    class="carousel-control-prev"
-                                    href="#carouselExampleIndicators"
-                                    role="button"
-                                    data-slide="prev"
-                                  >
-                                    <span
-                                      class="carousel-control-prev-icon"
-                                      aria-hidden="true"
-                                    ></span>
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a
-                                    class="carousel-control-next"
-                                    href="#carouselExampleIndicators"
-                                    role="button"
-                                    data-slide="next"
-                                  >
-                                    <span
-                                      class="carousel-control-next-icon"
-                                      aria-hidden="true"
-                                    ></span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                                </div>
-                              </div>
-                              <div class="row card-body">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                  <p>
-                                    Users can create projects, assign tasks with
-                                    deadlines, keep track of events and write
-                                    diary entries about their day.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div
-                            class="card-header text-center btn btn-link papyrus shadowfilter collapsed"
-                            id="headingTwo"
-                            data-toggle="collapse"
-                            data-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo"
-                          >
-                            <h5 class="mb-0" style="font-size: xx-large">
-                              <img
-                                class="project-icon-2 img-fluid align-self-center mr-1"
-                                src="./images/reading-book2.png"
-                              />
-                              Papyrus
-                            </h5>
-                          </div>
-                          <div
-                            id="collapseTwo"
-                            class="collapse"
-                            aria-labelledby="headingTwo"
-                            data-parent="#accordion"
-                          >
-                            <div class="row card-body">
-                              <div class="col-lg-12 col-md-12 col-sm-12">
-                                <p>
-                                  Papyrus is a web app that keeps track of books
-                                  and collections.
-                                </p>
-                                <p>
-                                  This project was done using the full MERN
-                                  stack, along with some CSS and Bootstrap.
-                                  Information about various books and covers
-                                  were retrieved using the OpenLibraryAPI.
-                                </p>
-                              </div>
-                            </div>
-                            <div class="row card-body justify-content-center">
-                              <div
-                                id="carouselExampleIndicators2"
-                                class="carousel slide col-lg-7 col-md-10 col-sm-10"
-                                data-ride="carousel"
-                              >
-                                <ol class="carousel-indicators">
-                                  <li
-                                    data-target="#carouselExampleIndicators2"
-                                    data-slide-to="0"
-                                    class="active"
-                                  ></li>
-                                  <li
-                                    data-target="#carouselExampleIndicators2"
-                                    data-slide-to="1"
-                                  ></li>
-                                  <li
-                                    data-target="#carouselExampleIndicators2"
-                                    data-slide-to="2"
-                                  ></li>
-                                </ol>
-                                <div class="carousel-inner align-self-center">
-                                  <div class="carousel-item active">
-                                    <img
-                                      class="d-block img-fluid project-img"
-                                      src="./images/papyrus-home.png"
-                                      alt="First slide"
-                                    />
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img
-                                      class="img-fluid project-img"
-                                      src="./images/papyrus-book.png"
-                                      alt="Second slide"
-                                    />
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img
-                                      class="img-fluid project-img"
-                                      src="./images/papyrus-search.png"
-                                      alt="Third slide"
-                                    />
-                                  </div>
-                                </div>
-                                <a
-                                  class="carousel-control-prev"
-                                  href="#carouselExampleIndicators2"
-                                  role="button"
-                                  data-slide="prev"
-                                >
-                                  <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a
-                                  class="carousel-control-next"
-                                  href="#carouselExampleIndicators2"
-                                  role="button"
-                                  data-slide="next"
-                                >
-                                  <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                  ></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="row card-body">
-                              <div class="col-lg-12 col-md-12 col-sm-12">
-                                <p>
-                                  Users can create their own book collections,
-                                  update reading progress and search for various
-                                  books by title.
-                                </p>
-                                <p>
-                                  This project is in progress. Features that
-                                  will be added soon include following other
-                                  users, writing book reviews and a notification
-                                  system.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div
-                            class="card-header text-center btn btn-link papyrus shadowfilter collapsed"
-                            id="headingThree"
-                            data-toggle="collapse"
-                            data-target="#collapseThree"
-                            aria-expanded="false"
-                            aria-controls="collapseThree"
-                          >
-                            <h5 class="mb-0" style="font-size: xx-large">
-                              <img
-                                class="project-icon-3 img-fluid align-self-center mr-1"
-                                src="./images/hermes.png"
-                              />
-                              Hermes
-                            </h5>
-                          </div>
-                          <div
-                            id="collapseThree"
-                            class="collapse"
-                            aria-labelledby="headingThree"
-                            data-parent="#accordion"
-                          >
-                            <div class="row card-body">
-                              <div class="col-lg-12 col-md-12 col-sm-12">
-                                <p>
-                                  Hermes is an API that generates and provides
-                                  company phone numbers as well as manages plans
-                                  for different clients. Users can subscribe to
-                                  three different tiers of plans with their own
-                                  benefits and are billed monthly.
-                                </p>
-                                <p>
-                                  This project was done using Python and the
-                                  Django REST framework.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+    <main class="main-content">
+        <section class="projects-section">
+            <h1 class="section-title">My Projects</h1>
+            
+            <div class="projects-grid">
+                <a href="project-detail.html?id=1" class="project-card">
+                    <img src="images/crash1.png" alt="Crash Analytics Project">
+                    <div class="project-overlay">
+                        <span class="project-name">NZTA Crash Analytics</span>
                     </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="splide-item">
-                    <div>
-                      <div class="skills-splide mt-5 mb-5 text-center">
-                        <h3
-                          id="skills-heading"
-                          style="font-size: xxx-large; color: #f9cd82"
-                        >
-                          What I Can Do
-                        </h3>
-                        <div
-                          class="row skills justify-content-center mt-5 mb-3 ml-2 mr-2"
-                        >
-                          <div
-                            class="skill01 col-lg-1 align-self-center col-md-3 col-sm-2"
-                          >
-                            <a class="skill-icon">
-                              <img
-                                class="img-fluid shadowfilter"
-                                style="height: 80px; width: 80px"
-                                src="./images/full-stack.png"
-                            /></a>
-                          </div>
-                          <div
-                            class="skill01 col-lg-4 col-md-10 col-sm-10 pt-3 pb-3"
-                          >
-                            <h3 style="color: #f9cd82">
-                              Fullstack Web Development
-                            </h3>
-                            <p>
-                              Familiar with the MERN stack, Django's MVT
-                              architecture and MySQL, as well as Bootstrap and
-                              CSS.
-                            </p>
-                          </div>
-                          <div
-                            class="skill02 col-lg-1 col-md-3 col-sm-2 align-self-center"
-                          >
-                            <a class="skill-icon">
-                              <img
-                                class="img-fluid shadowfilter"
-                                src="./images/api.png"
-                            /></a>
-                          </div>
-                          <div
-                            class="skill02 col-lg-5 col-md-10 col-sm-10 pt-3"
-                          >
-                            <h3 style="color: #f9cd82">
-                              Application Programming Interfacing
-                            </h3>
-                            <p>
-                              Implementing APIs such as the Twitter and
-                              OpenLibrary API in projects for better
-                              functionality.
-                            </p>
-                          </div>
-                        </div>
-                        <div
-                          class="row skills justify-content-center ml-2 mr-2 mt-5"
-                        >
-                          <div
-                            class="skill03 col-lg-1 col-md-3 col-sm-2 align-self-center"
-                          >
-                            <a class="skill-icon">
-                              <img
-                                class="img-fluid shadowfilter"
-                                src="./images/machine-learning.png"
-                            /></a>
-                          </div>
-                          <div class="skill03 col-lg-5 col-md-10 col-sm-10">
-                            <h3 style="color: #f9cd82">Machine Learning</h3>
-                            <p>
-                              Knowledge on data processing, neural nets,
-                              regression, natural language processing, ensemble
-                              learning and more.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+                </a>
+
+                <a href="project-detail.html?id=2" class="project-card">
+                    <img src="images/attsage_hm.png" alt="ECG Arrhythmia Classification Using Graph Neural Networks">
+                    <div class="project-overlay">
+                        <span class="project-name">ECG Arrhythmia Classification Using Graph Neural Networks</span>
                     </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="splide-item">
-                    <div class="contact-splide">
-                      <div class="row mb-4 mt-5">
-                        <div class="col-lg-10 col-md-10 col-sm-12">
-                          <p id="contact-heading" style="color: #f9cd82">
-                            Contact Me!
-                          </p>
-                        </div>
-                      </div>
-                      <div class="row contacts">
-                        <div class="col-lg-7 col-md-6 col-sm-12">
-                          <div
-                            class="row contact shadowfilter mb-5"
-                            id="contact01"
-                          >
-                            <div class="col-lg-2 col-md-3 col-sm-7">
-                              <img
-                                class="contact-icon align-self-center"
-                                src="./images/email.png"
-                              />
-                            </div>
-                            <div
-                              class="col-lg-1 col-md-7 col-sm-8 align-self-center ml-1 mr-1"
-                            >
-                              <p class="contact-item">
-                                <a
-                                  class="contact-link"
-                                  href="mailto:mariarohinigomes@gmail.com"
-                                  >mariarohinigomes@gmail.com</a
-                                >
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            class="row contact shadowfilter mb-5"
-                            id="contact02"
-                          >
-                            <div class="col-lg-2 col-md-3 col-sm-7">
-                              <img
-                                class="contact-icon align-self-center"
-                                src="./images/github.png"
-                              />
-                            </div>
-                            <div
-                              class="col-lg-1 col-md-7 col-sm-7 align-self-center"
-                            >
-                              <p class="contact-item">
-                                <a
-                                  class="contact-link"
-                                  href="https://github.com/Maria-Gomes"
-                                  target="_blank"
-                                  >Github</a
-                                >
-                              </p>
-                            </div>
-                          </div>
-                          <div class="row contact shadowfilter" id="contact03">
-                            <div class="col-lg-2 col-md-3 col-sm-7">
-                              <img
-                                class="contact-icon align-self-center"
-                                src="./images/linkedin.png"
-                              />
-                            </div>
-                            <div
-                              class="col-lg-1 col-md-7 col-sm-7 align-self-center"
-                            >
-                              <p class="contact-item">
-                                <a
-                                  class="contact-link"
-                                  href="https://www.linkedin.com/in/maria-gomes-04aa90212/"
-                                  target="_blank"
-                                  >LinkedIn</a
-                                >
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          class="col-lg-4 col-md-6 col-sm-8 mt-5"
-                          id="cat-div"
-                        >
-                          <img
-                            class="img-fluid align-self-center home-cat"
-                            src="./images/cat-crop.gif"
-                          />
-                        </div>
-                      </div>
+                </a>
+
+                <a href="project-detail.html?id=3" class="project-card">
+                    <img src="images/earthquake1.png" alt="Earthquake Magnitude Prediction Using Ground Motion Features">
+                    <div class="project-overlay">
+                        <span class="project-name">Earthquake Magnitude Prediction Using Ground Motion Features</span>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                </a>
+
+                <a href="project-detail.html?id=4" class="project-card">
+                    <img src="images/project4.jpg" alt="Project 4">
+                    <div class="project-overlay">
+                        <span class="project-name">Project Four</span>
+                    </div>
+                </a>
+
+                <a href="project-detail.html?id=5" class="project-card">
+                    <img src="images/project5.jpg" alt="Project 5">
+                    <div class="project-overlay">
+                        <span class="project-name">Project Five</span>
+                    </div>
+                </a>
+
+                <a href="project-detail.html?id=6" class="project-card">
+                    <img src="images/project6.jpg" alt="Project 6">
+                    <div class="project-overlay">
+                        <span class="project-name">Project Six</span>
+                    </div>
+                </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        </section>
+    </main>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
