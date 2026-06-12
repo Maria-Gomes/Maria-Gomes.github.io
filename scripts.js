@@ -121,7 +121,7 @@ const projects = {
     4: {
         title: "Customer Churn Prediction Using XGBoost",
         description:
-            "Supervised classification project where XGBoostis trained and used to predict whether an E-Commerce customer churns based on spending behaviour. Data was cleaned and exploratory analysis was done using Python and Pandas before training and tuning the model. SHAP was used for interpretation of individual model predictions by measuring the influence of each feature on the result for business insights.",
+            "Supervised classification project where XGBoost is trained and used to predict whether an E-Commerce customer churns based on spending behaviour. Data was cleaned and exploratory analysis was done using Python and Pandas before training and tuning the model. SHAP was used for interpretation of individual model predictions by measuring the influence of each feature on the result for business insights.",
         tech: "Python,, SciKit Learn, Pandas, SHAP",
         year: "2025",
 
